@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentry Bot Status</title>
+    <style>
+        body { background: #0a0e17; color: #00d4aa; font-family: monospace; padding: 20px; }
+        h1 { border-bottom: 2px solid #00d4aa; }
+        .card { background: #111827; border: 1px solid #333; padding: 15px; margin: 10px 0; border-radius: 8px; }
+        .green { color: #00ff88; }
+        .red { color: #ff4757; }
+        a { color: #00d4aa; }
+    </style>
+    <meta http-equiv="refresh" content="30">
+</head>
+<body>
+    <h1>SENTRY BOT - SYSTEM STATUS</h1>
+    
+    <div class="card">
+        <h2>Quick Links</h2>
+        <a href="http://localhost:8080">Trading Dashboard</a> |
+        <a href="http://localhost:8080/api/health">API Health</a> |
+        <a href="http://localhost:8080/api/stats">API Stats</a>
+    </div>
+    
+    <div class="card">
+        <h2>Files</h2>
+        <p>Config: C:\Users\dines\sentry\config\settings.yaml</p>
+        <p>Logs: C:\Users\dines\sentry\logs\</p>
+        <p>Data: C:\Users\dines\sentry\data\</p>
+        <p>Start: C:\Users\dines\sentry\START.bat</p>
+    </div>
+    
+    <div class="card">
+        <h2>Commands</h2>
+        <p>Start bot: Double-click START.bat</p>
+        <p>Stop bot: Ctrl+C in terminal</p>
+        <p>Telegram: /s for status</p>
+    </div>
+</body>
+</html>

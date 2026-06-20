@@ -1,0 +1,21 @@
+{
+  "date": "2026-06-19T02:13:06.405324",
+  "results": {
+    "total_trades": 40,
+    "winning_trades": 8,
+    "losing_trades": 32,
+    "total_profit": 2.6742529972561666,
+    "total_loss": 10.008294682032691,
+    "largest_win": 1.0974214220323475,
+    "largest_loss": -4.758493655341795,
+    "win_rate": 20.0,
+    "profit_factor": 0.2672036627835407,
+    "avg_win": 0.3342816246570208,
+    "avg_loss": 0.3127592088135216,
+    "sharpe_ratio": -2.698655739321902,
+    "max_drawdown": 0.47533055515606054,
+    "total_return": -0.36670208423884104,
+    "final_balance": 996.3329791576116
+  },
+  "trades_analyzed": 20
+}

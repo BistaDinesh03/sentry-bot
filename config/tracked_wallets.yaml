@@ -1,0 +1,37 @@
+# Known profitable Solana memecoin traders
+# These wallets are tracked for copy-trading signals
+
+wallets:
+  # Top memecoin traders (examples - replace with real profitable wallets)
+  - address: "7ABz8qEFZTHPkovMDsm25fQwvupiXcXrjDC9HEqVVp5R"
+    name: "Whale_Trader_1"
+    score: 10
+    
+  - address: "9UWbPjHhwmXGRyY5jgrHeMYx3mHq5RGefVm8NXqXsjK"
+    name: "Whale_Trader_2"
+    score: 9
+    
+  - address: "5tzFkiKscXHK5ZXCGbXZxdw7gTjjD1mBwuoFbhUvuAi"
+    name: "Memecoin_Sniper"
+    score: 8
+
+# Smart money signals
+smart_money:
+  # When a tracked wallet buys
+  single_wallet_buy: 10        # Points per wallet
+  
+  # Multiple wallets buy same token within 5 min
+  coordinated_buy: 25          # Big signal
+  
+  # Wallet concentration (skip if top 10 > 50%)
+  max_holder_concentration: 50  # Percent
+  
+  # Minimum wallet age (skip new wallets)
+  min_wallet_age_days: 30
+
+# Scoring
+scoring:
+  smart_money_points: 20      # Max points from on-chain (0-20 scale)
+  single_buy_points: 5
+  coordinated_buy_points: 10
+  whale_size_bonus: 5         # If buy > $10k

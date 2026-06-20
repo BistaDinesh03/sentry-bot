@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-19T02:15:52.868819",
+  "best_strategy": {
+    "name": "current",
+    "score": 74.0,
+    "config": {
+      "buy_threshold": 50,
+      "strong_buy_threshold": 70,
+      "max_positions": 6,
+      "take_profit_pct": 15,
+      "stop_loss_pct": 12,
+      "max_position_size": 100,
+      "min_conviction": 50
+    }
+  },
+  "rankings": [
+    {
+      "name": "current",
+      "score": 74.0,
+      "config": {
+        "buy_threshold": 50,
+        "strong_buy_threshold": 70,
+        "max_positions": 6,
+        "take_profit_pct": 15,
+        "stop_loss_pct": 12,
+        "max_position_size": 100,
+        "min_conviction": 50
+      }
+    },
+    {
+      "name": "aggressive",
+      "score": 74.0,
+      "config": {
+        "buy_threshold": 40,
+        "strong_buy_threshold": 60,
+        "max_positions": 8,
+        "take_profit_pct": 10,
+        "stop_loss_pct": 15,
+        "max_position_size": 150,
+        "min_conviction": 40
+      }
+    },
+    {
+      "name": "conservative",
+      "score": 74.0,
+      "config": {
+        "buy_threshold": 65,
+        "strong_buy_threshold": 80,
+        "max_positions": 4,
+        "take_profit_pct": 20,
+        "stop_loss_pct": 8,
+        "max_position_size": 50,
+        "min_conviction": 65
+      }
+    },
+    {
+      "name": "momentum_focused",
+      "score": 74.0,
+      "config": {
+        "buy_threshold": 55,
+        "strong_buy_threshold": 75,
+        "max_positions": 5,
+        "take_profit_pct": 12,
+        "stop_loss_pct": 10,
+        "max_position_size": 80,
+        "min_conviction": 55
+      }
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+# Telegram channels to monitor for memecoin calls
+# Format: channel_name, type (pump/alpha/calls), priority (1-10)
+
+channels:
+  # Pump channels
+  - name: "cryptopumpsignals"
+    type: "pump"
+    priority: 9
+    
+  - name: "solana_pumps"
+    type: "pump"
+    priority: 8
+    
+  - name: "memecoin_pump"
+    type: "pump"
+    priority: 7
+    
+  - name: "crypto_pump_signals"
+    type: "pump"
+    priority: 7
+
+  # Alpha/Call channels
+  - name: "SolanaAlpha"
+    type: "alpha"
+    priority: 10
+    
+  - name: "memecoin_calls"
+    type: "calls"
+    priority: 9
+    
+  - name: "crypto_gems_calls"
+    type: "calls"
+    priority: 8
+    
+  - name: "solana_gems_alpha"
+    type: "alpha"
+    priority: 9
+    
+  - name: "defi_gems"
+    type: "calls"
+    priority: 7
+    
+  - name: "crypto_alpha_calls"
+    type: "alpha"
+    priority: 8
+
+  # News/Announcement channels
+  - name: "solana_news"
+    type: "news"
+    priority: 6
+    
+  - name: "crypto_announcements"
+    type: "news"
+    priority: 5
+
+# Scoring weights for Telegram signals
+scoring:
+  first_mention_bonus: 10        # Extra points if caught within 30 min
+  coordinated_shill_bonus: 15    # Multiple channels same token < 5 min
+  pump_channel_penalty: -5       # Pump channels are less reliable
+  alpha_channel_bonus: 10        # Alpha channels more reliable
+  
+# Keywords that indicate high conviction
+strong_signals:
+  - "partnership"
+  - "listed on"
+  - "launching"
+  - "presale filled"
+  - "liquidity locked"
+  - "contract renounced"
+  - "audit passed"
+  - "doxxed team"
+  - "major exchange"
+  - "trending on"
+
+weak_signals:
+  - "moon"
+  - "1000x"
+  - "don't miss"
+  - "last chance"
+  - "guaranteed"

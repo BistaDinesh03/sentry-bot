@@ -1,0 +1,82 @@
+{
+  "balance": 970.0,
+  "positions": {
+    "ASTER": {
+      "amount": 15.446400988569664,
+      "buy_price": 0.6474,
+      "buy_time": "2026-06-21T04:35:29.100925",
+      "conviction": 0.475
+    },
+    "ZEREBRO": {
+      "amount": 235.68230025925052,
+      "buy_price": 0.04243,
+      "buy_time": "2026-06-21T04:35:30.240133",
+      "conviction": 0.425
+    },
+    "AERO": {
+      "amount": 18.7125748502994,
+      "buy_price": 0.5344,
+      "buy_time": "2026-06-21T04:35:31.332318",
+      "conviction": 0.4
+    }
+  },
+  "trade_history": [
+    {
+      "action": "BUY",
+      "token": "ASTER",
+      "amount": 15.446400988569664,
+      "price": 0.6474,
+      "cost": 10.0,
+      "time": "2026-06-21T04:35:29.100925",
+      "conviction": 0.475
+    },
+    {
+      "action": "BUY",
+      "token": "ZEREBRO",
+      "amount": 235.68230025925052,
+      "price": 0.04243,
+      "cost": 10.0,
+      "time": "2026-06-21T04:35:30.240133",
+      "conviction": 0.425
+    },
+    {
+      "action": "BUY",
+      "token": "AERO",
+      "amount": 18.7125748502994,
+      "price": 0.5344,
+      "cost": 10.0,
+      "time": "2026-06-21T04:35:31.332318",
+      "conviction": 0.4
+    }
+  ],
+  "stats": {
+    "balance": 970.0,
+    "initial_balance": 1000,
+    "total_profit_loss": 0,
+    "total_return_percent": -3.0,
+    "total_trades": 0,
+    "winning_trades": 0,
+    "win_rate": 0,
+    "open_positions": 3,
+    "positions": {
+      "ASTER": {
+        "amount": 15.446400988569664,
+        "buy_price": 0.6474,
+        "buy_time": "2026-06-21T04:35:29.100925",
+        "conviction": 0.475
+      },
+      "ZEREBRO": {
+        "amount": 235.68230025925052,
+        "buy_price": 0.04243,
+        "buy_time": "2026-06-21T04:35:30.240133",
+        "conviction": 0.425
+      },
+      "AERO": {
+        "amount": 18.7125748502994,
+        "buy_price": 0.5344,
+        "buy_time": "2026-06-21T04:35:31.332318",
+        "conviction": 0.4
+      }
+    }
+  }
+}

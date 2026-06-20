@@ -1,0 +1,48 @@
+bot:
+  name: "Sentry"
+  version: "5.0.0"
+  log_level: "INFO"
+
+trading:
+  initial_balance: 1000
+  max_position_size: 60
+  max_positions: 3
+  min_conviction: 0.55
+  take_profit_pct: 15
+  stop_loss_pct: -6
+  min_liquidity: 10000
+  min_volume_24h: 50000
+  max_token_price: 1.0
+
+scanners:
+  reddit:
+    enabled: true
+    subreddits: [CryptoMoonShots, SolanaMemeCoins, memecoin]
+    request_delay: 2.0
+    cache_minutes: 5
+    max_posts: 25
+  fourchan:
+    enabled: true
+    board: "biz"
+    max_threads: 25
+  telegram:
+    enabled: true
+    channels: [solana_meme_coins, memecoin_alerts, cryptopump]
+    cache_minutes: 3
+
+telegram_bot:
+  enabled: true
+  token: "8941980034:AAHEbSWvm9ebGQsWyMEoXChZKlvyD8s5oQI"
+  chat_id: "8966556590"
+  alerts:
+    on_buy: true
+    on_sell: true
+
+dashboard:
+  port: 8080
+  theme: "dark"
+  refresh_seconds: 5
+
+token_filter:
+  blacklist: [SOL, BTC, ETH, BNB, XRP, ADA, AVAX, DOT, MATIC, USDC, USDT, DAI, LTC, BCH, XLM, DOGE, SHIB, PEPE, TRX, LINK, UNI]
+  allowed_memecoins: [BONK, WIF, POPCAT, WEN, MEW, MOODENG, PNUT, GOAT, FARTCOIN, BRET, ANDY, WOLF, PENG, GUAC, APOCAT, SOLM, MYRO, SPCX, BOOB, FLIP, ONDO, LILLY, PENGU, FLOKI, ASTER, ZEREBRO, FOR, ACT, ANT, SPX, CARDS, OPG, ASTEROID, MET, BP, MELANIA, NOCK, APT, SOLT]
