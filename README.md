@@ -1,47 +1,56 @@
 # Sentry
 
-> An open-source AI-assisted memecoin trading bot for Solana.
+> Open-source Solana memecoin trading bot for market scanning, signal scoring, risk management, and paper trading.
 
-Sentry watches the market, filters risky tokens, scores opportunities, and manages trades using a mix of market, on-chain, social, and risk signals.
+<p align="center">
+  <img src="screenshots/dashboard.png" width="65%" valign="top" />
+  &nbsp;
+  <img src="screenshots/telegram-alert.png" width="27%" valign="top" />
+</p>
+
+Sentry continuously monitors crypto markets, filters token candidates, evaluates multiple signals, and sends trading alerts while managing a simulated portfolio.
 
 ## How It Works
 
+```text
+Discover → Filter → Score → Risk Check → Entry → Monitor → Exit
 ```
-Scanner → Filters → Score → Risk → Entry → Monitor → Exit
-```
 
-### Token Scoring
+### Signals
 
-Every candidate token is scored based on signals such as:
+Sentry evaluates multiple factors before considering a trade:
 
-- Liquidity & volume
-- Momentum & RSI
+- Market momentum
+- Volume and liquidity
+- RSI
 - On-chain activity
-- Social activity
 - Token safety
+- Social signals
 - Market conditions
 
-**Higher score = stronger setup.**
+Each candidate receives a score to help determine the strength of the setup.
 
 ## Features
 
-- Multi-source token discovery
-- Rug & safety checks
-- Market momentum analysis
+- Solana token discovery
+- Multi-signal token scoring
+- Rug and safety checks
+- Momentum and volume analysis
 - On-chain signals
-- Social sentiment analysis
-- AI-assisted market analysis
+- Social sentiment
+- Risk management
 - Position sizing
 - Tiered exits
 - Crash protection
-- Paper trading
+- Telegram alerts
 - Local trading dashboard
+- Paper trading
 
 ## Current Status
 
-🟡 **Paper / simulation trading**
+**Paper / simulation trading**
 
-Real Solana execution is under active development. The goal is to validate the full strategy safely before enabling live transactions.
+Sentry currently uses simulated trading to test its strategy without sending real transactions. Real Solana execution is under development.
 
 ## Quick Start
 
@@ -53,14 +62,41 @@ pip install -r requirements.txt
 python src/main.py
 ```
 
-Then open the local dashboard:
+Open the dashboard:
 
 ```
 http://localhost:8080
 ```
 
-## Project
+## Project Structure
 
-Built to explore autonomous trading systems, market intelligence, and risk management on Solana.
+```
+sentry-bot/
+├── src/            # Trading logic and strategies
+├── config/         # Configuration
+├── data/           # Local data and portfolio state
+├── logs/           # Runtime logs
+├── screenshots/    # Project screenshots
+└── README.md
+```
 
-**Not financial advice. Use at your own risk.**
+## Roadmap
+
+- [x] Token discovery
+- [x] Market signal analysis
+- [x] Risk management
+- [x] Paper trading
+- [x] Telegram alerts
+- [x] Trading dashboard
+- [ ] Backtesting engine
+- [ ] Improved smart-money analysis
+- [ ] Live Jupiter execution
+- [ ] On-chain trade verification
+
+## Disclaimer
+
+Sentry is an experimental open-source project for research and educational purposes. Cryptocurrency trading involves substantial risk. Paper-trading results do not guarantee future performance. Do your own research before using real funds.
+
+## License
+
+MIT
