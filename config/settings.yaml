@@ -30,14 +30,6 @@ scanners:
     channels: [solana_meme_coins, memecoin_alerts, cryptopump]
     cache_minutes: 3
 
-telegram_bot:
-  enabled: true
-  token: "8941980034:AAHEbSWvm9ebGQsWyMEoXChZKlvyD8s5oQI"
-  chat_id: "8966556590"
-  alerts:
-    on_buy: true
-    on_sell: true
-
 dashboard:
   port: 8080
   theme: "dark"
